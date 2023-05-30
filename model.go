@@ -74,10 +74,10 @@ const outputFormat = "Finally, output the generated code snippets of testcases a
 	"```go\n" +
 	"type GeneratedTestcase struct { \n" +
 	"	TestDesc String `yaml:\"test_desc\"`  // 测试用例生成原因\n" +
-	"	TestcaseAIArr []TestcaseAIYAML `yaml:\"testcase_ai_arr\"` // 测试用例多样化生成内容\n" +
+	"	TestcaseAIArr []TestCaseAIYAML `yaml:\"testcase_ai_arr\"` // 测试用例多样化生成内容\n" +
 	"}\n" +
 	"\n" +
-	"type CrashFuncAI struct {\n" +
+	"type TestCaseAIYAML struct {\n" +
 	"	Index    string `yaml:\"index\"`    // 生成的测试用例的序号\n" +
 	"	Content string `yaml:\"content\"` // 生成的测试用例代码\n" +
 	"}\n" +

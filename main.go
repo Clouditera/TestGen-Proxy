@@ -190,6 +190,9 @@ func main() {
 			}
 
 			content := resp.Choices[0].Message.Content
+
+			log.Println("response:", content)
+
 			var generatedTestcase GeneratedTestcase
 			err = yaml.Unmarshal([]byte(content), &generatedTestcase)
 			if err != nil {
